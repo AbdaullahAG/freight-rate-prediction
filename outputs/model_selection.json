@@ -1,0 +1,102 @@
+{
+ "chosen": "hybrid",
+ "mechanical_rule_result": "blend",
+ "rule": "min(cv_mape_mean+cv_mape_std) among models with holdout clean MAPE within 0.10pp of best; blend preferred only if >=0.03 better AND not worse on holdout and latest CV month",
+ "blend_weights": {
+  "ridge": 0.05325083850890361,
+  "lightgbm": 0.20328138278801944,
+  "catboost": 0.2369706117941264,
+  "hybrid": 0.5064971669089507
+ },
+ "eligible": [
+  "lightgbm",
+  "catboost",
+  "hybrid",
+  "blend"
+ ],
+ "best_params": {
+  "ridge": {
+   "alpha": 0.004291652898701575,
+   "use_dow": false
+  },
+  "lightgbm": {
+   "n_estimators": 372,
+   "learning_rate": 0.04601142725536295,
+   "num_leaves": 45,
+   "min_child_samples": 22,
+   "subsample": 0.8397986403755999,
+   "colsample_bytree": 0.6654564209034074,
+   "reg_lambda": 0.03281546142573356,
+   "reg_alpha": 0.024506294212518896
+  },
+  "hybrid": {
+   "n_estimators": 350,
+   "learning_rate": 0.05675349306652228,
+   "num_leaves": 60,
+   "min_child_samples": 72,
+   "subsample": 0.9033449108684637,
+   "colsample_bytree": 0.7737268062442049,
+   "reg_lambda": 0.018505018980648016,
+   "reg_alpha": 0.5037744390551725,
+   "num_leaves_h": 23,
+   "n_estimators_h": 433,
+   "ridge_alpha": 0.24434098626184209
+  },
+  "catboost": {
+   "iterations": 500,
+   "learning_rate": 0.038873674792455175,
+   "depth": 7,
+   "l2_leaf_reg": 1.1366591365127634
+  }
+ },
+ "cold_start_cities": [
+  "Bakersfield",
+  "Hartford",
+  "Memphis",
+  "New York",
+  "San Antonio",
+  "Toledo",
+  "Tulsa",
+  "Washington"
+ ],
+ "features_primary": [
+  "distance",
+  "log_distance",
+  "haversine",
+  "dist_over_hav",
+  "mismatch",
+  "equip",
+  "weight",
+  "weight_missing",
+  "weight_capped",
+  "weight_bin",
+  "market_index",
+  "mi_missing",
+  "pickup_lat",
+  "pickup_lon",
+  "delivery_lat",
+  "delivery_lon",
+  "lane_stat",
+  "lane_n",
+  "rev_stat",
+  "rev_n"
+ ],
+ "features_fallback": [
+  "distance",
+  "log_distance",
+  "haversine",
+  "dist_over_hav",
+  "mismatch",
+  "equip",
+  "weight",
+  "weight_missing",
+  "weight_capped",
+  "weight_bin",
+  "market_index",
+  "mi_missing",
+  "pickup_lat",
+  "pickup_lon",
+  "delivery_lat",
+  "delivery_lon"
+ ]
+}

@@ -1,0 +1,13 @@
+group,dimension,n,mape_pct,bias_pct,mae
+Dry Van,equipment,5275,2.429,-2.217,55.807
+Flatbed,equipment,1746,3.401,-3.192,84.835
+Reefer,equipment,2358,2.77,-2.569,72.514
+<300,distance_band,770,2.712,-2.451,15.355
+300-700,distance_band,2474,2.673,-2.463,31.648
+700-1200,distance_band,2589,2.614,-2.381,53.646
+1200-2000,distance_band,2033,2.761,-2.587,90.215
+>2000,distance_band,1513,2.777,-2.593,132.9
+9,month,4606,2.956,-2.727,72.904
+10,month,4773,2.444,-2.256,58.181
+no,lane_has_history,2,4.737,-4.737,224.933
+yes,lane_has_history,9377,2.695,-2.487,65.377
