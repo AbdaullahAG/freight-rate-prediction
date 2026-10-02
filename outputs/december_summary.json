@@ -1,0 +1,31 @@
+{
+ "mean_abs_diff_A_vs_B": 4.330607795416118,
+ "max_abs_diff_A_vs_B": 11.102688192152755,
+ "mean_pred_A": 830.2996588464589,
+ "mean_pred_B": 826.1697002870304,
+ "A_min": 825.2059883142119,
+ "A_max": 837.2723884791828,
+ "A_range_pct_of_mean": 1.4532584755887814,
+ "A_max_day_to_day_jump": 7.316770956215805,
+ "A_mean_by_weekday": {
+  "Friday": 833.4,
+  "Monday": 826.29,
+  "Saturday": 827.31,
+  "Sunday": 825.79,
+  "Thursday": 836.27,
+  "Tuesday": 828.43,
+  "Wednesday": 834.93
+ },
+ "haversine_lex_fw": 299.4016184198828,
+ "dist_over_hav": 1.2023983100022313,
+ "lane_history_rows(fwd,rev)": [
+  32.0,
+  33.0
+ ],
+ "market_index_A_range": [
+  0.8305901538461539,
+  1.0445469897959183
+ ],
+ "market_index_B_value": 0.8265635885167465,
+ "choice": "A"
+}
