@@ -1,0 +1,13 @@
+catboost==1.2.10
+joblib==1.6.0
+lightgbm==4.7.0
+matplotlib==3.11.2
+numpy==2.5.3
+optuna==5.0.0
+pandas==2.3.3
+pyarrow==25.0.1
+pytest==9.1.1
+python-docx==1.2.0
+scikit-learn==1.9.1
+scipy==1.18.1
+shap==0.52.0

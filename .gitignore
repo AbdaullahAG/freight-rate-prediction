@@ -1,0 +1,14 @@
+data/*
+!data/README.txt
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+*.pkl
+*.joblib
+*.cbm
+*.lgb
+*.zip
+catboost_info/
+optuna_*.db
