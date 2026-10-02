@@ -1,0 +1,472 @@
+{
+  "shape": {
+    "train": [
+      48000,
+      14
+    ],
+    "validation": [
+      12000,
+      13
+    ]
+  },
+  "ids_match_template": true,
+  "date_range": {
+    "train": [
+      "2025-01-01",
+      "2025-10-31"
+    ],
+    "validation": [
+      "2025-11-01",
+      "2025-12-31"
+    ]
+  },
+  "train_days": 304,
+  "weight": {
+    "neg_train": 292,
+    "neg_val": 145,
+    "abs_mean_pos": 31415.35867364158,
+    "abs_mean_neg": 31724.195205479453,
+    "at_cap_train": 1204,
+    "at_cap_val": 301,
+    "min_abs": 5000.0
+  },
+  "nulls": {
+    "weight": {
+      "train": 300,
+      "val": 165,
+      "month_rate_min": 0.004150238638721726,
+      "month_rate_max": 0.007608946276227807,
+      "equip_rate": {
+        "Dry Van": 0.0064,
+        "Flatbed": 0.0063,
+        "Reefer": 0.0058
+      },
+      "rate_null_vs_notnull": [
+        2350.6657666666665,
+        2374.1273169811325
+      ]
+    },
+    "market_index": {
+      "train": 374,
+      "val": 249,
+      "month_rate_min": 0.006432869890018676,
+      "month_rate_max": 0.008781099728204057,
+      "equip_rate": {
+        "Dry Van": 0.0074,
+        "Flatbed": 0.0083,
+        "Reefer": 0.0082
+      },
+      "rate_null_vs_notnull": [
+        2392.115106951872,
+        2373.8382753118044
+      ]
+    }
+  },
+  "market_index": {
+    "within_date_sd_median": 0.024849713496314235,
+    "between_date_sd": 0.1665244260476778,
+    "dates_all_null_train": 0,
+    "dates_all_null_val": 0
+  },
+  "label_outliers": {
+    "n": 677,
+    "pct": 1.4104166666666667,
+    "robust_sigma_clean": 0.04573872350414901,
+    "threshold_log": 0.4573872350414901,
+    "n_high": 340,
+    "n_low": 337,
+    "mult_high_range": [
+      2.1692110028867204,
+      5.368563842258058
+    ],
+    "mult_low_range": [
+      0.16852641125600393,
+      0.4534391060695832
+    ],
+    "rate_by_distance_quintile": [
+      0.0158,
+      0.0146,
+      0.0143,
+      0.0135,
+      0.0123
+    ],
+    "rate_by_equipment": {
+      "Dry Van": 0.0135,
+      "Flatbed": 0.0145,
+      "Reefer": 0.0151
+    },
+    "rate_by_month": [
+      0.0165,
+      0.0131,
+      0.0141,
+      0.0137,
+      0.0126,
+      0.0132,
+      0.0132,
+      0.0143,
+      0.0137,
+      0.0165
+    ],
+    "n_between_0.3_and_0.5": 0,
+    "n_in_holdout": 144
+  },
+  "rpm": {
+    "0.001": 0.437,
+    "0.01": 1.674,
+    "0.5": 2.145,
+    "0.99": 3.177,
+    "0.999": 10.069
+  },
+  "rpm_clean": {
+    "0.001": 1.637,
+    "0.5": 2.145,
+    "0.999": 3.318
+  },
+  "rpm_by_equipment_clean": {
+    "Dry Van": 2.046,
+    "Flatbed": 2.22,
+    "Reefer": 2.312
+  },
+  "coords": {
+    "cities_train": 64,
+    "cities_val": 72,
+    "max_nunique_latlon_per_city_train": 1,
+    "max_abs_diff_train_vs_val_common_cities": 0.0,
+    "lat_range_train": [
+      28.35765,
+      44.30296
+    ],
+    "lon_range_train": [
+      -121.69849,
+      -69.5
+    ],
+    "val_unseen_cities": [
+      "Allentown",
+      "Charlotte",
+      "Chicago",
+      "Jackson",
+      "Knoxville",
+      "Laredo",
+      "Norfolk",
+      "San Diego"
+    ],
+    "val_unseen_city_coords": {
+      "Allentown": {
+        "lat": 40.0168,
+        "lon": -73.8089
+      },
+      "Charlotte": {
+        "lat": 34.6527,
+        "lon": -81.472
+      },
+      "Chicago": {
+        "lat": 40.512,
+        "lon": -86.8674
+      },
+      "Jackson": {
+        "lat": 32.0777,
+        "lon": -90.9259
+      },
+      "Knoxville": {
+        "lat": 36.2572,
+        "lon": -86.0254
+      },
+      "Laredo": {
+        "lat": 25.5,
+        "lon": -97.2268
+      },
+      "Norfolk": {
+        "lat": 37.1228,
+        "lon": -75.8711
+      },
+      "San Diego": {
+        "lat": 32.0093,
+        "lon": -116.896
+      }
+    },
+    "ratio_dist_over_hav_train_pctl": [
+      1.13,
+      1.182,
+      1.404
+    ],
+    "corr_dist_hav_train": 0.9995349596237133,
+    "ratio_gt_1.6_n": 111,
+    "ratio_gt_1.6_median_distance": 83.8,
+    "ratio_gt_1.6_max_distance": 146.4,
+    "min_distance": 70.0,
+    "n_at_distance_70": 48,
+    "pair_distance_nunique_median": 10.0,
+    "pair_distance_sd_median": 15.936373489599214,
+    "lexington_fortwayne_train_rows": 32,
+    "lexington_fortwayne_distance_mean": 363.66875000000005,
+    "lexington_coords": {
+      "lat": 36.99152,
+      "lon": -84.99876
+    },
+    "fort_wayne_coords": {
+      "lat": 41.31561,
+      "lon": -85.36206
+    }
+  },
+  "unseen_val_rows_pct": 12.058333333333334,
+  "unseen_lane_pct": 12.174999999999999,
+  "monthly": {
+    "1": {
+      "n": 4837,
+      "mean_rate": 2226.2781,
+      "median_rpm": 2.0291,
+      "market_index": 0.9266,
+      "quote_signal": 2.0676
+    },
+    "2": {
+      "n": 4280,
+      "mean_rate": 2261.8025,
+      "median_rpm": 2.0611,
+      "market_index": 0.9959,
+      "quote_signal": 2.0959
+    },
+    "3": {
+      "n": 4965,
+      "mean_rate": 2355.0531,
+      "median_rpm": 2.1397,
+      "market_index": 1.0729,
+      "quote_signal": 2.1793
+    },
+    "4": {
+      "n": 4753,
+      "mean_rate": 2355.8854,
+      "median_rpm": 2.1472,
+      "market_index": 1.2073,
+      "quote_signal": 1.9645
+    },
+    "5": {
+      "n": 4851,
+      "mean_rate": 2403.0497,
+      "median_rpm": 2.1907,
+      "market_index": 1.3014,
+      "quote_signal": 1.9134
+    },
+    "6": {
+      "n": 4720,
+      "mean_rate": 2449.897,
+      "median_rpm": 2.2471,
+      "market_index": 1.2803,
+      "quote_signal": 2.2968
+    },
+    "7": {
+      "n": 4847,
+      "mean_rate": 2380.2141,
+      "median_rpm": 2.1865,
+      "market_index": 1.2011,
+      "quote_signal": 1.9226
+    },
+    "8": {
+      "n": 4691,
+      "mean_rate": 2312.4431,
+      "median_rpm": 2.1206,
+      "market_index": 0.9814,
+      "quote_signal": 2.0526
+    },
+    "9": {
+      "n": 4606,
+      "mean_rate": 2375.33,
+      "median_rpm": 2.1589,
+      "market_index": 0.8931,
+      "quote_signal": 2.2002
+    },
+    "10": {
+      "n": 4773,
+      "mean_rate": 2345.5119,
+      "median_rpm": 2.1642,
+      "market_index": 0.9573,
+      "quote_signal": 1.9429
+    }
+  },
+  "dow_median_rpm": {
+    "0": 2.1263,
+    "1": 2.1386,
+    "2": 2.1617,
+    "3": 2.1705,
+    "4": 2.1583,
+    "5": 2.1318,
+    "6": 2.1274
+  },
+  "dow_spread_pct": 2.061161858041898,
+  "corr_resid_nomi": {
+    "resid_nomi": {
+      "resid_nomi": 1.0,
+      "market_index": 0.4387,
+      "quote_signal": 0.0674
+    },
+    "market_index": {
+      "resid_nomi": 0.4387,
+      "market_index": 1.0,
+      "quote_signal": -0.0668
+    },
+    "quote_signal": {
+      "resid_nomi": 0.0674,
+      "market_index": -0.0668,
+      "quote_signal": 1.0
+    }
+  },
+  "corr_logresid": {
+    "log_resid": {
+      "log_resid": 1.0,
+      "market_index": -0.0007,
+      "quote_signal": 0.1077
+    },
+    "market_index": {
+      "log_resid": -0.0007,
+      "market_index": 1.0,
+      "quote_signal": -0.0668
+    },
+    "quote_signal": {
+      "log_resid": 0.1077,
+      "market_index": -0.0668,
+      "quote_signal": 1.0
+    }
+  },
+  "val_monthly": {
+    "11": {
+      "market_index": 0.9187,
+      "quote_signal": 2.0553
+    },
+    "12": {
+      "market_index": 0.9347,
+      "quote_signal": 2.0476
+    }
+  },
+  "quote_signal_month_slopes": {
+    "1": {
+      "qs_mean": 2.0676,
+      "qs_slope_on_lograte": 0.0585,
+      "mi_slope_on_lograte": 0.1176
+    },
+    "2": {
+      "qs_mean": 2.0959,
+      "qs_slope_on_lograte": 0.054,
+      "mi_slope_on_lograte": 0.1283
+    },
+    "3": {
+      "qs_mean": 2.1793,
+      "qs_slope_on_lograte": 0.0658,
+      "mi_slope_on_lograte": 0.1649
+    },
+    "4": {
+      "qs_mean": 1.9645,
+      "qs_slope_on_lograte": -0.0486,
+      "mi_slope_on_lograte": 0.1525
+    },
+    "5": {
+      "qs_mean": 1.9134,
+      "qs_slope_on_lograte": -0.0416,
+      "mi_slope_on_lograte": 0.1205
+    },
+    "6": {
+      "qs_mean": 2.2968,
+      "qs_slope_on_lograte": 0.053,
+      "mi_slope_on_lograte": 0.0853
+    },
+    "7": {
+      "qs_mean": 1.9226,
+      "qs_slope_on_lograte": -0.0503,
+      "mi_slope_on_lograte": 0.1492
+    },
+    "8": {
+      "qs_mean": 2.0526,
+      "qs_slope_on_lograte": -0.0001,
+      "mi_slope_on_lograte": 0.1198
+    },
+    "9": {
+      "qs_mean": 2.2002,
+      "qs_slope_on_lograte": 0.0646,
+      "mi_slope_on_lograte": 0.0497
+    },
+    "10": {
+      "qs_mean": 1.9429,
+      "qs_slope_on_lograte": -0.0542,
+      "mi_slope_on_lograte": 0.1326
+    }
+  },
+  "ranges": {
+    "market_index": {
+      "train_min": 0.67639,
+      "train_max": 1.46778,
+      "val_min": 0.72361,
+      "val_max": 1.09895,
+      "val_outside_train_pct": 0.0,
+      "val_mean": 0.9269130491022041,
+      "train_mean": 1.0833867156595136
+    },
+    "quote_signal": {
+      "train_min": 0.69228,
+      "train_max": 3.61035,
+      "val_min": 1.23476,
+      "val_max": 2.89635,
+      "val_outside_train_pct": 0.0,
+      "val_mean": 2.0513338391666665,
+      "train_mean": 2.0624678412499997
+    },
+    "distance": {
+      "train_min": 70.0,
+      "train_max": 3439.8,
+      "val_min": 70.0,
+      "val_max": 3325.7,
+      "val_outside_train_pct": 0.0,
+      "val_mean": 1141.7730999999999,
+      "train_mean": 1135.8566541666667
+    },
+    "weight": {
+      "train_min": 5000.0,
+      "train_max": 47500.0,
+      "val_min": 5000.0,
+      "val_max": 47500.0,
+      "val_outside_train_pct": 0.0,
+      "val_mean": 31282.954626109,
+      "train_mean": 31417.24924528302
+    }
+  },
+  "train_mi_pctl_of_val_mean": 0.20217948179565784,
+  "adversarial": {
+    "auc_all_features": 0.8759025520833335,
+    "auc_without_market_index": 0.7554257621527778,
+    "auc_without_market_index_and_geo": 0.7273924088541667,
+    "control_auc_sepoct_vs_janaug_train": 0.9253702953762687,
+    "importance_all": {
+      "market_index": 0.5614,
+      "has_unseen_city": 0.1347,
+      "quote_signal": 0.1116,
+      "distance": 0.0899,
+      "equip": 0.0337,
+      "weight_abs": 0.0296,
+      "delivery_lat": 0.0116,
+      "pickup_lat": 0.0096,
+      "delivery_lon": 0.0094,
+      "pickup_lon": 0.0087
+    },
+    "importance_no_mi": {
+      "has_unseen_city": 0.3184,
+      "quote_signal": 0.2569,
+      "distance": 0.1817,
+      "equip": 0.0837,
+      "weight_abs": 0.0746,
+      "delivery_lat": 0.0253,
+      "pickup_lat": 0.0238,
+      "pickup_lon": 0.0178,
+      "delivery_lon": 0.0177
+    },
+    "univariate_auc": {
+      "market_index": 0.7788,
+      "has_unseen_city": 0.5603,
+      "quote_signal": 0.508,
+      "weight_abs": 0.505,
+      "pickup_lon": 0.5042,
+      "pickup_lat": 0.5025,
+      "distance": 0.5019,
+      "equip": 0.5014,
+      "delivery_lon": 0.5012,
+      "delivery_lat": 0.5006
+    },
+    "note": "date is excluded (it trivially separates the sets); stratified 5-fold is used only to measure separability"
+  }
+}
