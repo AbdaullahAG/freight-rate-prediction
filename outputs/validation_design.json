@@ -1,0 +1,23 @@
+{
+ "cv_eval_months": [
+  3,
+  8
+ ],
+ "holdout_months": [
+  9,
+  10
+ ],
+ "cold_start_held_out_cities": [
+  "Bakersfield",
+  "Hartford",
+  "Memphis",
+  "New York",
+  "San Antonio",
+  "Toledo",
+  "Tulsa",
+  "Washington"
+ ],
+ "n_folds": 6,
+ "time_leak_assertions_passed": true,
+ "holdout_scored_in_part_a": false
+}

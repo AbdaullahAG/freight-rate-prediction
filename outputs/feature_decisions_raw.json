@@ -1,0 +1,21 @@
+{
+ "best_target_mode": "log_rate",
+ "signal_set_base": "G1_+market_index",
+ "signal_ranges": {
+  "market_index": {
+   "train_min": 0.67639,
+   "train_max": 1.46778,
+   "val_min": 0.72361,
+   "val_max": 1.09895,
+   "val_pct_outside": 0.0
+  },
+  "quote_signal": {
+   "train_min": 0.69228,
+   "train_max": 3.61035,
+   "val_min": 1.23476,
+   "val_max": 2.89635,
+   "val_pct_outside": 0.0
+  }
+ },
+ "seconds": 55.18588185310364
+}

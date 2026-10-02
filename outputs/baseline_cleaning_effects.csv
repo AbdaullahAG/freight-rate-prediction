@@ -1,0 +1,8 @@
+variant,mae,rmse,mape_pct,smape_pct,rmsle,r2,median_ape_pct
+"A) train on ALL rows, eval ALL rows (naive)",120.3425,602.4006,5.4326,4.6317,0.1556,0.8389,2.7295
+"B) train CLEAN, eval ALL rows",118.2233,601.4218,5.3793,4.5675,0.1554,0.8394,2.662
+"C) train CLEAN, eval CLEAN",68.955,96.0697,3.069,3.1049,0.0388,0.9951,2.6178
+C-noMI) as C but without market_index,101.8791,141.2017,4.2557,4.37,0.0532,0.9894,3.8936
+"D) as C, weight RAW (negatives kept)",70.9818,101.14,3.1557,3.1957,0.0408,0.9945,2.6668
+"E) as C, weight ABS",68.955,96.0697,3.069,3.1049,0.0388,0.9951,2.6178
+"F) as C, no weight feature",82.3401,114.8025,3.5993,3.6407,0.0453,0.993,3.1049
